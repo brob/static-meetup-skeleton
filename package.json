@@ -1,6 +1,11 @@
 {
     "name": "11ty-starter",
     "version": "0.1.0",
+    "scripts": {
+        "build": "npx gulp build",
+        "meetups": "npx gulp meetup:get",
+        "serve": "npx gulp serve"
+    },
     "dependencies": {
         "@11ty/eleventy": "^0.7.1",
         "browser-sync": "^2.26.3",

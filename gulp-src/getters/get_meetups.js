@@ -5,7 +5,7 @@ var axios   = require('axios');
 
 gulp.task('meetup:get', async function () {
     // URL for data store
-    let url = `https://api.meetup.com/memphis-technology-user-groups/events?photo-host=public&page=20&sig_id=${process.env.MEETUP_KEY}`;
+    let url = `https://api.meetup.com/${process.env.MEETUP_URL }/events?photo-host=public&page=20&sig_id=${process.env.MEETUP_KEY}`;
     let statusFile = "_data/meetups.json";
     let stringMatch = ""; // Match meetup name against a string if you need to filter
     axios.get(url)
