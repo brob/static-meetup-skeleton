@@ -1,0 +1,6 @@
+.env
+.gitignore
+GulpFile.js
+package.json
+node_modules
+gulp-src

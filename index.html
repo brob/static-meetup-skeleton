@@ -1,0 +1,33 @@
+---
+layout: layouts/base.html
+welcomeMessage: "Hello World for Code COntemporary"
+---
+    <h1>{{ welcomeMessage }} for 11ty on the serve now</h1>
+
+
+
+
+    {% for post in collections.posts %}
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+    {% endfor %}
+<br><br>
+
+    
+
+    <h2>Upcoming Meetups</h2>
+    {% for meetup in meetups %}
+        <article class="meetup__item">
+            <h3><a href="{{meetup.link }}" title="Link to {{ meetup.name }}">{{ meetup.name }}</a></h3>
+            <p>{{ meetup.description }}</p>
+            <a href="{{meetup.link }}" title="Link to {{ meetup.name }}">RSVP here &raquo;</a>
+        </article>
+    {% endfor %}
+
+    {% if collections.posts.0 %}
+    <section class="notes">
+        <h2>Past Meetup Notes</h2>
+        {% for post in collections.posts %}
+            <h3><a href="{{ post.url }}" title="Link to {{ post.data.title }}">{{ post.data.title }}</a></h3>
+        {% endfor %}
+    </section>
+    {% endif %}
