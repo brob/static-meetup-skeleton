@@ -27,6 +27,8 @@ a {
     font-size: 3rem;
     display: block;
     text-align: center;
+}
+.logo-image {
     margin: .5rem auto;
 }
 
