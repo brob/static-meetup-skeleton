@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<a href="/" class="logo">{% if logo %}<img src="{{ logo }}">{% else %}{{ settings.siteName }}{% endif %}</a>
+<a href="/" class="logo">{% if settings.logo %}<img src="{{ settings.logo }}">{% else %}{{ settings.siteName }}{% endif %}</a>
 
 
 

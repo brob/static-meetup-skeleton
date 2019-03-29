@@ -5,7 +5,9 @@ module.exports = function(config) {
     });
 
     config.addFilter("slice", require("./filters/slice.js"));
-    
+    config.addFilter("lookup", require("./filters/lookup.js"));
+    config.addPassthroughCopy("images");
+
     return {
         dir: {
           input: ".",
