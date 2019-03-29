@@ -1,0 +1,87 @@
+:root {
+    --link-color: tomato;
+    --background-color: #ccc;
+}
+
+html {
+    font-family: 'Book Antiqua', 'Palatino Linotype', Palatino, serif;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+body {
+    margin: 0;
+}
+* {
+    margin: 0;
+}
+* > * {
+    margin-top: 1em;
+}
+
+a {
+    color: var(--link-color);
+}
+
+.logo {
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+}
+
+.banner {
+    background-color: var(--background-color);
+    padding: 4rem 1rem 3rem; 
+}
+.banner__content {
+    max-width: 850px;
+    width: 95vw;
+    margin: auto;
+}
+
+.container {
+    width:90vw;
+    max-width: 850px;
+    margin: auto;
+}
+.meetups {
+    display: flex;
+    margin: auto;
+    max-width: 1200px;
+}
+.meetup__title {
+    font-size: 1.5rem;
+    line-height: 1.4em;
+}
+.meetup__item {
+    padding: 1rem 2rem 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, .4);
+}
+.meetup__date {
+    font-size: .8rem;
+    margin-top: .5rem;
+    font-style: italic;
+}
+.upcoming {
+    flex: 1;
+    max-width: 950px;
+    margin-right: 2rem;
+}
+.notes {
+    flex: .5;
+}
+
+.page-title {
+    font-size: 3rem;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+
+.footer {
+    text-align: center;
+    background-color: var(--background-color);
+    padding: 1rem;
+    
+}

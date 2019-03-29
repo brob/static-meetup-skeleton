@@ -4,13 +4,15 @@ module.exports = function(config) {
       return collection.getFilteredByGlob('posts/*.md');
     });
 
+    config.addFilter("slice", require("./filters/slice.js"));
+    
     return {
         dir: {
           input: ".",
           output: "dist",
           includes: "templates"
         },
-        templateFormats : ["html", "md"],
+        templateFormats : ["html", "md", "css"],
         htmlTemplateEngine : "liquid",
         markdownTemplateEngine : "liquid"
       };

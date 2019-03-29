@@ -1,33 +1,29 @@
 ---
 layout: layouts/base.html
-welcomeMessage: "Hello World for Code COntemporary"
+title: "Hello World for Code COntemporary"
+about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat ornare lorem, nec pulvinar diam ultricies ut. Donec bibendum quam sollicitudin arcu posuere, vel faucibus diam laoreet. In feugiat rhoncus magna, sed fermentum urna dictum sed. Integer mattis massa sit amet nulla blandit bibendum. "
 ---
-    <h1>{{ welcomeMessage }} for 11ty on the serve now</h1>
 
+    <section class="meetups">
+        <section class="upcoming">
+            <h2>Upcoming Meetups</h2>
+            {% assign meetupSlice = meetups | slice: "2" %}
+            {% for meetup in meetupSlice %}
+                <article class="meetup__item">
+                    <h3 class="meetup__title"><a href="{{meetup.link }}" title="Link to {{ meetup.name }}">{{ meetup.name }}</a></h3>
+                    <p class="meetup__date">{{ meetup.local_date | date: "%B %d, %Y" }}</p>
+                    <p class="meetup__description">{{ meetup.description }}</p>
+                    <a href="{{meetup.link }}" title="Link to {{ meetup.name }}">RSVP here &raquo;</a>
+                </article>
+            {% endfor %}
+        </section>
 
-
-
-    {% for post in collections.posts %}
-        <a href="{{ post.url }}">{{ post.data.title }}</a>
-    {% endfor %}
-<br><br>
-
-    
-
-    <h2>Upcoming Meetups</h2>
-    {% for meetup in meetups %}
-        <article class="meetup__item">
-            <h3><a href="{{meetup.link }}" title="Link to {{ meetup.name }}">{{ meetup.name }}</a></h3>
-            <p>{{ meetup.description }}</p>
-            <a href="{{meetup.link }}" title="Link to {{ meetup.name }}">RSVP here &raquo;</a>
-        </article>
-    {% endfor %}
-
-    {% if collections.posts.0 %}
-    <section class="notes">
-        <h2>Past Meetup Notes</h2>
-        {% for post in collections.posts %}
-            <h3><a href="{{ post.url }}" title="Link to {{ post.data.title }}">{{ post.data.title }}</a></h3>
-        {% endfor %}
+        {% if collections.posts.0 %}
+        <section class="notes">
+            <h2>Past Meetup Notes</h2>
+            {% for post in collections.posts %}
+                <h3><a href="{{ post.url }}" title="Link to {{ post.data.title }}">{{ post.data.title }}</a></h3>
+            {% endfor %}
+        </section>
     </section>
     {% endif %}
