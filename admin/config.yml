@@ -11,6 +11,15 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Post Body", name: "body", widget: "markdown"}
-
+ - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Homepage"
+        name: "homepage"
+        file: "index.html"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: About Text, name: about, widget: markdown}
+          
 
 media_folder: "images" # Media files will be stored in the repo under images/uploads
