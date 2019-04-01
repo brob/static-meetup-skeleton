@@ -78,7 +78,7 @@ img {
     max-width: 950px;
     margin-right: 2rem;
 }
-.notes {
+.sidebar {
     flex: .5;
 }
 @media (max-width: 640px) {
