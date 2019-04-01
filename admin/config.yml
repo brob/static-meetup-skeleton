@@ -26,7 +26,7 @@ collections:
         file: "_data/settings.json"
         fields:
           - {label: "Site Name", name: "siteName", widget: "string"}
-          - {label: "Logo", name: "logo", widget: "image"}
+          - {label: "Logo", name: "logo", widget: "image", required: false}
        
 
 media_folder: "images" # Media files will be stored in the repo under images/uploads
