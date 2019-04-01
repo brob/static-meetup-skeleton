@@ -1,0 +1,40 @@
+{% include head.html %}
+
+<section class="meetups">
+    <section class="upcoming">
+        <h2>Upcoming Meetups</h2>
+        {% assign meetupSlice = meetups | slice: "2" %}
+        {% for meetup in meetupSlice %}
+            <article class="meetup__item">
+                <h3 class="meetup__title"><a href="{{meetup.link }}" title="Link to {{ meetup.name }}">{{ meetup.name }}</a></h3>
+                <p class="meetup__date">{{ meetup.local_date | date: "%B %d, %Y" }}</p>
+                <p class="meetup__description">{{ meetup.description }}</p>
+                <a href="{{meetup.link }}" title="Link to {{ meetup.name }}">RSVP here &raquo;</a>
+            </article>
+        {% endfor %}
+    </section>
+
+    {% if collections.posts.0 %}
+    <section class="notes">
+        <h2>Past Meetup Notes</h2>
+        {% for post in collections.posts %}
+            <h3><a href="{{ post.url }}" title="Link to {{ post.data.title }}">{{ post.data.title }}</a></h3>
+        {% endfor %}
+    </section>
+    {% endif %}
+</section>
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+                });
+            }
+            });
+        }
+    </script>
+
+{% include foot.html %}
