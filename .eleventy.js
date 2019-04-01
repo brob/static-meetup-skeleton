@@ -3,6 +3,9 @@ module.exports = function(config) {
     config.addCollection('posts', collection => {
       return collection.getFilteredByGlob('posts/*.md');
     });
+    config.addCollection('sponsors', collection => {
+      return collection.getFilteredByGlob('posts/*.md');
+    });
 
     config.addFilter("slice", require("./filters/slice.js"));
     config.addFilter("lookup", require("./filters/lookup.js"));
