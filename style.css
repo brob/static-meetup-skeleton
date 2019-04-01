@@ -25,6 +25,8 @@ a {
 
 .logo {
     font-size: 3rem;
+    line-height: 1.3em;
+    margin-top: 1rem;
     display: block;
     text-align: center;
 }
