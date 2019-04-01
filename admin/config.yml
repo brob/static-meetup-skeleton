@@ -17,7 +17,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields: 
-      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Name", name: "title", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "URL", name: "link", widget: "string"}
   - label: "Pages"
