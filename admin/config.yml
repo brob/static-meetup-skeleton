@@ -11,6 +11,15 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Post Body", name: "body", widget: "markdown"}
+  - label: "Sponsors"
+    name: "Sponsors"
+    folder: "sponsors"
+    create: true
+    slug: "{{slug}}"
+    fields: 
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "URL", name: "link", widget: "string"}
   - label: "Pages"
     name: "pages"
     files:

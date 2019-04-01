@@ -4,7 +4,7 @@ module.exports = function(config) {
       return collection.getFilteredByGlob('posts/*.md');
     });
     config.addCollection('sponsors', collection => {
-      return collection.getFilteredByGlob('posts/*.md');
+      return collection.getFilteredByGlob('sponsors/*.md');
     });
 
     config.addFilter("slice", require("./filters/slice.js"));
