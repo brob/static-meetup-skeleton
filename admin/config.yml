@@ -18,6 +18,7 @@ collections:
         name: "homepage"
         file: "index.html"
         fields:
+          - {label: Layout, name: "layout", widget: "hidden", default: "layouts/base.html"}
           - {label: Title, name: title, widget: string}
           - {label: About Text, name: about, widget: text}
           
