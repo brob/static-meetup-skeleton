@@ -22,6 +22,9 @@ body {
 a {
     color: var(--link-color);
 }
+img {
+    max-width: 100%;
+}
 
 .logo {
     font-size: 3rem;
