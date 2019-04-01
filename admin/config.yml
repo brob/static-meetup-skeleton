@@ -19,7 +19,7 @@ collections:
         file: "index.html"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: About Text, name: about, widget: markdown}
+          - {label: About Text, name: about, widget: text}
           
 
 media_folder: "images" # Media files will be stored in the repo under images/uploads
