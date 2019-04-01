@@ -50,7 +50,8 @@ img {
 .container {
     width:90vw;
     max-width: 850px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .meetups {
     display: flex;
