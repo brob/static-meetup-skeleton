@@ -3,4 +3,4 @@ var gulp    = require('gulp');
 
 
 
-gulp.task('build', gulp.series('meetup:get', 'image:opt', 'generate'));
+gulp.task('build', gulp.series('image:opt', 'generate'));

@@ -14,23 +14,23 @@
         {% endfor %}
     </section>
     <section class="sidebar">
-    {% if collections.posts.0 %}
-    <section class="notes">
-        <h2>Past Meetup Notes</h2>
-        {% for post in collections.posts %}
-            <h3><a href="{{ post.url }}" title="Link to {{ post.data.title }}">{{ post.data.title }}</a></h3>
-        {% endfor %}
+        {% if collections.posts.0 %}
+        <section class="notes">
+            <h2>Past Meetup Notes</h2>
+            {% for post in collections.posts %}
+                <h3><a href="{{ post.url }}" title="Link to {{ post.data.title }}">{{ post.data.title }}</a></h3>
+            {% endfor %}
+        </section>
+        {% endif %}
+        {% if collections.sponsors.0 %}
+        <section class="sponsors">
+            <h2>Sponsors</h2>
+            {% for sponsor in collections.sponsors %}
+                <a href="{{ sponsor.data.link }}"><img src="{{ sponsor.data.image }}" alt="{{ sponsor.data.title }}"></a>
+            {% endfor %}
+        </section>
+        {% endif %} 
     </section>
-    {% endif %}
-    {% if collections.sponsors.0 %}
-    <section class="sponsors">
-        <h2>Sponsors</h2>
-        {% for sponsor in collections.sponsors %}
-            <a href="{{ sponsor.data.link }}"><img src="{{ sponsor.data.image }}" alt="{{ sponsor.data.title }}"></a>
-        {% endfor %}
-    </section>
-    {% endif %}
-</section>
 </section>
 
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>

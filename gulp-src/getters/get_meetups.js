@@ -1,3 +1,4 @@
+// If You'd rather use Gulp than 11ty's built-in data building, add this back to your serve and build steps
 var project = require('../_project.js');
 var gulp    = require('gulp');
 var axios   = require('axios');

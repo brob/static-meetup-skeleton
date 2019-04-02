@@ -13,4 +13,4 @@ gulp.task('browser-sync', function(done) {
 });
 
 
-gulp.task('serve', gulp.parallel('generate', 'watch', 'meetup:get', 'image:opt', 'browser-sync'));
+gulp.task('serve', gulp.parallel('generate', 'watch','image:opt', 'browser-sync'));
