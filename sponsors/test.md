@@ -1,6 +1,6 @@
 ---
-title: test
-image: /images/0.jpg
-link: 'http://google.com'
+title: Code Contemporary
+image: /images/sponsor-logo.png
+link: 'http://codecontemporary.com'
 ---
 
