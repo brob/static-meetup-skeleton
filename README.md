@@ -2,13 +2,13 @@
 
 # User Group Starter Pack for Eleventy and Netlify
 
-Welcome to the User Group Website Starter Pack. This is a repository that contains a skeleton for a static website for your meetup group. It's based on my experience running a local meetup group in Memphis, Tenn. 
+Welcome to the User Group Website Starter Pack. This is a repository that contains a skeleton for a static website for your meetup group. It's based on my experience running a [local meetup group in Memphis, Tenn](http://memphiswebworkers.com). 
 
 ## Why?
 
 It's hard enough finding new content for your user group each month. Sometimes crafting a usable website falls by the wayside and we just use things that are available to us: Facebook Groups, Meetup Groups, Wordpress.com sites. Whatever gets the message out quickest.
 
-If you want to retake some ownership over your user group's website, here's a great starting point with 11ty and Netlify.
+If you want to retake some ownership over your user group's website, here's a great starting point with [11ty Static Site Generator](https://11ty.io) and [Netlify](https://netlify.com).
 
 ## Installation and Setup
 
@@ -47,7 +47,7 @@ If you don't have a deployment pipeline, you can run `npm run build` locally and
 
 ## Netlify CMS Integration
 
-This project comes with NetlifyCMS built in. It's super handy to use. Even though I'm proficient in writing code for static sites, sometimes I don't want to deal with the process. Or perhaps I'm on someone else's computer and don't want to install everything.
+This project comes with [NetlifyCMS](https://www.netlifycms.org/) built in. It's super handy to use. Even though I'm proficient in writing code for static sites, sometimes I don't want to deal with the process. Or perhaps I'm on someone else's computer and don't want to install everything.
 
 To get fully up and running with Netlify CMS, you'll need to configure a few small details.
 
@@ -69,7 +69,7 @@ I've found that successful user groups provide their attendees with a single pla
 
 That's all well and good, you say, but what about when I update meetup.com. This site is static; it won't know.
 
-True enough. We can fix that, though. Netlify and Meetup both integrate with Zapier. That means, you can go create a Zapier account and create a "Zap" that will run when your meetup account updates.
+True enough. We can fix that, though. Netlify and Meetup both integrate with [Zapier](https://zapier.com). That means, you can go create a Zapier account and create a "Zap" that will run when your meetup account updates.
 
 In your Zapier account, you'll create a new Zap. The "Trigger" will use the Meetup "New Event" app. You'll have to authenticate your Meetup account to make this work.
 
