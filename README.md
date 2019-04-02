@@ -65,6 +65,18 @@ Currently, you can edit the homepage content, logo and site name, blog posts, an
 
 I've found that successful user groups provide their attendees with a single place to go to find notes and resources from presenters. To accomplish this, we're using 11ty's blog post collections. You can create new markdown files to do this, or use the NetlifyCMS to create new blog posts.
 
+## Automated Deploys
+
+That's all well and good, you say, but what about when I update meetup.com. This site is static; it won't know.
+
+True enough. We can fix that, though. Netlify and Meetup both integrate with Zapier. That means, you can go create a Zapier account and create a "Zap" that will run when your meetup account updates.
+
+In your Zapier account, you'll create a new Zap. The "Trigger" will use the Meetup "New Event" app. You'll have to authenticate your Meetup account to make this work.
+
+The "Action" for your Zap will be Netlify's "Start Deploy" action.
+
+This flow will update the data for your site everytime you create a new event on your Meetup account. Set up your event details once and share seamlessly to your site AND Meetup.
+
 ## Clone and deploy to Netlify right now
 
 The button below will fork this repository and automatically deploy it to a Netlify account that you log into (or create). From there, don't forget the deploy steps above (creating environment variables and setting up Identity for CMS login).
