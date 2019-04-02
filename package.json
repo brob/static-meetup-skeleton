@@ -3,7 +3,6 @@
     "version": "0.1.0",
     "scripts": {
         "build": "npx gulp build",
-        "meetups": "npx gulp meetup:get",
         "serve": "npx gulp serve"
     },
     "dependencies": {
