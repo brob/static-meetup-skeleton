@@ -2,6 +2,8 @@
 title: 'Notes from March 26, 2019: SCSS Naming Conventions'
 date: '2019-03-26'
 ---
+![](/images/meetup-image.jpeg)
+
 ## Meeting Notes
 
 Josh Bryant talked about SCSS naming conventions. [His slides are available here](https://docs.google.com/presentation/d/1qb00Wd_FsfnbM3lEvSTfJ-q0-alBCVT2oW1fFdKCJ_0/edit#slide=id.p).
@@ -26,13 +28,11 @@ Pros:
 * Great for newcomers to SCSS
 * Highly scalable
 
-
 Cons:
 
 * There can be specificity issues
 * Deep level CSS
 * Where should things live?
-
 
 ### Aesthetic SASS
 
