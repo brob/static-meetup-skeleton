@@ -46,7 +46,7 @@ collections:
         name: "styles"
         file: "style.liquid"
         fields:
-          - { label: permalink, name: permalink, widget: hidden, default: style.css }
+          - { label: permalink, name: permalink, widget: hidden, default: "/style.css" }
           - { label: "Background Color", name: background-color, widget: string, default: "#ccc" }
           - { label: "Foreground Color", name: foreground-color, widget: string, default: "#fff" }
           - { label: "Link Color", name: link-color, widget: string, default: tomato}
