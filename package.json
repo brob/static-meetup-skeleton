@@ -6,7 +6,7 @@
         "serve": "npx gulp serve"
     },
     "dependencies": {
-        "@11ty/eleventy": "^0.7.1",
+        "@11ty/eleventy": "^0.8.2",
         "browser-sync": "^2.26.3",
         "dotenv": "^6.2.0",
         "gulp": "^4.0.0",

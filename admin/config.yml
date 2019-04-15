@@ -42,5 +42,13 @@ collections:
             fields: 
               - { label: "Social Network URL", name: "url", widget: "string" }
               - { label: "Network SVG", name: "image-file", widget: "file", hint: "This must be an SVG" }
+      - label: "Styles"
+        name: "styles"
+        file: "style.liquid"
+        fields:
+          - { label: permalink, name: permalink, widget: hidden, default: style.css }
+          - { label: "Background Color", name: background-color, widget: string, default: "#ccc" }
+          - { label: "Foreground Color", name: foreground-color, widget: string, default: "#fff" }
+          - { label: "Link Color", name: link-color, widget: string, default: tomato}
 
 media_folder: "images" # Media files will be stored in the repo under images/uploads

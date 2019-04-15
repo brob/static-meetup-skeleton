@@ -19,7 +19,7 @@ module.exports = function(config) {
           output: "dist",
           includes: "templates"
         },
-        templateFormats : ["html", "md", "css"],
+        templateFormats : ["html", "md", "css", "liquid"],
         htmlTemplateEngine : "liquid",
         markdownTemplateEngine : "liquid"
       };
