@@ -35,7 +35,12 @@ collections:
         file: "_data/settings.json"
         fields:
           - {label: "Site Name", name: "siteName", widget: "string"}
-          - {label: "Logo", name: "logo", widget: "image", required: false}
-       
+          - {label: "Logo", name: "logo", widget: "image", required: false, hint: "If not specified, Site Name will be used as a text link" }
+          - label: "Social Networks"
+            name: "socials"
+            widget: "list"
+            fields: 
+              - { label: "Social Network URL", name: "url", widget: "string" }
+              - { label: "Network SVG", name: "image-file", widget: "file", hint: "This must be an SVG" }
 
 media_folder: "images" # Media files will be stored in the repo under images/uploads
