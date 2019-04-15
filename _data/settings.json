@@ -1,4 +1,10 @@
 {
   "siteName": "User Group Starter Pack",
-  "logo": "/images/sponsor-logo.png"
+  "logo": "/images/sponsor-logo.png",
+  "socials": [
+    {
+      "url": "https://twitter.com/memphisww",
+      "image-file": "/images/twitter_logo_blue.svg"
+    }
+  ]
 }
