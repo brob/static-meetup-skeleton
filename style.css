@@ -1,6 +1,7 @@
 :root {
-    --link-color: tomato;
-    --background-color: #5fb2bf;
+    --link-color: #d57528;
+    --background-color: #116c9a;
+    --foreground-color: #fff;
 }
 
 html {
@@ -15,6 +16,7 @@ body {
 }
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 * + * {
     margin-top: 1em;
@@ -26,20 +28,37 @@ a {
 img {
     max-width: 100%;
 }
-
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+.socials {
+    display: flex;
+}
+.social {
+    margin: 0 1rem 0 0;
+}
+.social:last-child {
+    margin-right: 0;
+}
+.social svg {
+    height: 2.5rem;
+}
 .logo {
     font-size: 3rem;
     line-height: 1.3em;
     margin-top: 1rem;
     display: block;
-    text-align: center;
 }
 .logo-image {
-    margin: .5rem auto;
+
 }
 
 .banner {
     background-color: var(--background-color);
+    color: var(--foreground-color);
     padding: 4rem 1rem; 
 }
 .banner__content {
@@ -75,6 +94,9 @@ img {
 .meetup__details {
     margin: 0;
 }
+.meetup__details p a {
+    word-break: break-all;
+}
 .meetup__date {
     font-size: .8rem;
     margin-top: .5rem;
@@ -96,6 +118,7 @@ img {
 }
 .date__month {
     background-color: var(--background-color);
+    color: var(--foreground-color);
     padding: 5px;
 }
 .date__day {
@@ -111,6 +134,12 @@ img {
         margin: 1rem auto 0;
         width: 90vw;
     }
+    .header {
+        display: block;
+    }
+    .logo-image img {
+        width: 100%;
+    }
 }
 .page-title {
     font-size: 3rem;
@@ -122,6 +151,7 @@ img {
 .footer {
     text-align: center;
     background-color: var(--background-color);
+    color: var(--foreground-color);
     padding: 1rem;
     
 }
