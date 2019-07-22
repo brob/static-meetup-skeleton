@@ -1,7 +1,8 @@
 ---
-layout: "style.liquid"
 permalink: /style.css
-link-color: "#d57528"
-background-color: "#116c9a"
-foreground-color: "#fff"
----	
+layout: style.liquid
+background-color: '#00c7b7'
+foreground-color: '#222'
+link-color: '#00c7b7'
+---
+
