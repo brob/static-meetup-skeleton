@@ -47,6 +47,7 @@ collections:
         file: "style.liquid"
         fields:
           - { label: "Permalink", name: "permalink", widget: "hidden", default: "/style.css" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "/style.liquid" }
           - { label: "Background Color", name: "background-color", widget: "string", default: "#ccc" }
           - { label: "Foreground Color", name: "foreground-color", widget: "string", default: "#fff" }
           - { label: "Link Color", name: "link-color", widget: "string", default: "tomato"}
